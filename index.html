@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Academic portfolio of Omar Ahmed, senior AI student specializing in Machine Learning and Computer Vision at Egypt University of Informatics." />
+  <title>Omar Ahmed — AI Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Inline theme init: runs before first paint to prevent flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme:light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', t);
+    }());
+  </script>
+</head>
+
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="brand-wrapper">
+          <img src="blue-circle-with-white-user_78370-4707.avif" alt="Omar Ahmed Profile" class="nav-avatar">
+          <span class="brand-name">Omar Ahmed</span>
+        </div>
+      </a>
+      <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme">
+          <!-- Sun — visible in dark mode -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+          </svg>
+          <!-- Moon — visible in light mode -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO / HOME ===================== -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content reveal">
+          <div class="hero-header">
+            <div class="hero-text">
+              <p class="eyebrow">Egypt University of Informatics &mdash; Class of 2026</p>
+              <h1 class="hero-name">Omar Ahmed</h1>
+            </div>
+            <div class="hero-avatar">
+              <img src="blue-circle-with-white-user_78370-4707.avif" alt="Omar Ahmed Profile Photo">
+            </div>
+          </div>
+          <p class="hero-tagline">Introduction</p>
+          <p class="hero-intro">
+            My name is Omar Ahmed, a senior undergraduate student in Artificial Intelligence
+            at the Egypt University of Informatics, expected to graduate in 2026.
+          </p>
+          <p class="hero-intro">
+            My academic work focuses on the design, implementation, and evaluation of machine learning
+            systems, with particular emphasis on computer vision, neural network architectures,
+            and data-driven model optimization.
+          </p>
+          <p class="hero-intro">
+            This portfolio presents a structured overview of my academic background, technical experience,
+            applied machine learning projects, and ongoing research interests. The objective is to
+            demonstrate both conceptual understanding and practical implementation of artificial
+            intelligence methods through coursework, research exploration, and industry experience.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">See My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT / ACADEMIC PROFILE ===================== -->
+    <section id="about" class="section section-alt reveal">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Academic Background</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-left">
+            <div class="info-card">
+              <h3 class="card-label">Institution</h3>
+              <p>Egypt University of Informatics</p>
+              <p class="muted">Bachelor of Science in Artificial Intelligence</p>
+              <p class="muted">Expected Graduation: 2026</p>
+            </div>
+
+            <div class="info-card">
+              <h3 class="card-label">Academic Focus</h3>
+              <p class="muted" style="margin-bottom: 12px;">My primary areas of study include:</p>
+              <ul class="dash-list">
+                <li>Machine learning model design and evaluation</li>
+                <li>Computer vision systems and image recognition pipelines</li>
+                <li>Neural network optimization under limited data conditions</li>
+                <li>Data analysis and experimental evaluation methodologies</li>
+              </ul>
+              <p class="muted" style="margin-top: 14px;">
+                These topics are explored through both coursework and project-based implementation,
+                with emphasis on reproducible experimentation and rigorous performance evaluation.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <h3 class="card-label" style="margin-bottom: 20px;">Core Coursework</h3>
+            <div class="course-grid">
+              <div class="course-card">
+                <div class="course-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z" />
+                    <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z" />
+                    <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4" />
+                    <path d="M17.599 6.5a3 3 0 0 0 .399-1.375" />
+                  </svg></div>
+                <div>
+                  <h4>Machine Learning</h4>
+                  <p>Topics include model selection, supervised learning algorithms, regularization techniques, and
+                    cross-validation methods for reliable performance evaluation.</p>
+                </div>
+              </div>
+              <div class="course-card">
+                <div class="course-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg></div>
+                <div>
+                  <h4>Computer Vision</h4>
+                  <p>Study of image processing pipelines, convolutional neural networks (CNNs), feature extraction
+                    techniques, and classification architectures for visual data.</p>
+                </div>
+              </div>
+              <div class="course-card">
+                <div class="course-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                    <polyline points="2 17 12 22 22 17" />
+                    <polyline points="2 12 12 17 22 12" />
+                  </svg></div>
+                <div>
+                  <h4>Deep Learning</h4>
+                  <p>Development and training of neural network architectures, including backpropagation, transfer
+                    learning, and optimization strategies for deep models.</p>
+                </div>
+              </div>
+              <div class="course-card">
+                <div class="course-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="18" x2="18" y1="20" y2="10" />
+                    <line x1="12" x2="12" y1="20" y2="4" />
+                    <line x1="6" x2="6" y1="20" y2="14" />
+                  </svg></div>
+                <div>
+                  <h4>Data Analysis</h4>
+                  <p>Application of statistical methods, exploratory data analysis, and data visualization techniques
+                    for interpreting and evaluating machine learning models.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" class="section reveal">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <p class="section-sub">This section outlines professional internships and technical contributions within
+            industry environments, demonstrating the application of artificial intelligence and software engineering
+            concepts in practical settings.</p>
+        </header>
+
+        <div class="exp-list">
+
+          <article class="exp-card" style="--delay:0ms">
+            <div class="exp-head">
+              <div class="exp-info">
+                <h3 class="exp-company">Amazon</h3>
+                <p class="exp-role">Machine Learning Intern</p>
+                <p class="exp-loc">Seattle, Washington</p>
+              </div>
+              <span class="exp-period">Jun 2026 &ndash; Aug 2026</span>
+            </div>
+            <p class="exp-context">
+              During this internship, I collaborated with the machine learning engineering team
+              on predictive modeling systems used for recommendation algorithms.
+              Key contributions included:
+            </p>
+            <ul class="exp-bullets">
+              <li>Developing predictive models for recommendation systems operating on large-scale product and user
+                interaction data.</li>
+              <li>Implementing data preprocessing pipelines using Python and Pandas to prepare structured datasets for
+                training.</li>
+              <li>Training and evaluating machine learning models including logistic regression, decision trees, and
+                neural networks.</li>
+              <li>Conducting model evaluation using precision, recall, F1-score, and confusion matrices to ensure
+                balanced performance across classes.</li>
+              <li>Creating visualization dashboards for analyzing model performance and dataset distributions.</li>
+              <li>Assisting in the integration of trained models into production-level APIs for internal services.</li>
+            </ul>
+          </article>
+
+          <article class="exp-card" style="--delay:120ms">
+            <div class="exp-head">
+              <div class="exp-info">
+                <h3 class="exp-company">Apple</h3>
+                <p class="exp-role">Software Engineering Intern</p>
+                <p class="exp-loc">Cupertino, California</p>
+              </div>
+              <span class="exp-period">Jun 2025 &ndash; Aug 2025</span>
+            </div>
+            <p class="exp-context">
+              At Apple, I worked within the software engineering team to support the development
+              and optimization of backend services used by internal developer tools.
+              Key responsibilities included:
+            </p>
+            <ul class="exp-bullets">
+              <li>Developing and optimizing backend services supporting internal engineering platforms.</li>
+              <li>Designing and implementing RESTful APIs to facilitate communication between internal systems.</li>
+              <li>Improving data processing pipelines used for analytics and monitoring infrastructure.</li>
+              <li>Conducting debugging and performance profiling to identify system bottlenecks.</li>
+              <li>Producing technical documentation and system architecture diagrams to improve maintainability and
+                developer collaboration.</li>
+            </ul>
+          </article>
+
+          <article class="exp-card" style="--delay:240ms">
+            <div class="exp-head">
+              <div class="exp-info">
+                <h3 class="exp-company">HR Health One</h3>
+                <p class="exp-role">Full-Stack Developer Intern</p>
+                <p class="exp-loc">Cairo, Egypt</p>
+              </div>
+              <span class="exp-period">Jul 2024 &ndash; Aug 2024</span>
+            </div>
+            <p class="exp-context">
+              During this internship, I contributed to the development of internal enterprise
+              software systems and educational technology platforms.
+              Key contributions included:
+            </p>
+            <ul class="exp-bullets">
+              <li>Supporting the development of the company's internal HR management system used to automate employee
+                workflow processes.</li>
+              <li>Implementing backend features managing employee records, authentication, and system data flow.</li>
+              <li>Designing relational database schemas using PostgreSQL and documenting system architecture through
+                Entity-Relationship diagrams.</li>
+              <li>Integrating Power BI dashboards with C# WinForms applications to enable HR data visualization.</li>
+              <li>Developing an online charity e-learning platform using WordPress and PHP to provide educational
+                resources to underserved communities.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Machine Learning Projects</h2>
+          <p class="section-sub">This section presents applied machine learning projects completed as part of academic
+            coursework, demonstrating implementation of theoretical concepts in practical systems.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Project 01 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">01</span>
+              <div class="tag-row">
+                <span class="tag tag-sm">CNN</span>
+                <span class="tag tag-sm">Computer Vision</span>
+                <span class="tag tag-sm">Transfer Learning</span>
+              </div>
+            </div>
+            <h3 class="project-title">Image Classification Using Convolutional Neural Networks</h3>
+            <div class="project-body">
+              <div class="detail">
+                <h4>Problem</h4>
+                <p>
+                  The objective of this project was to design a machine learning system capable of
+                  accurately classifying images into predefined categories &mdash; a fundamental problem
+                  in computer vision with applications in areas such as medical imaging and autonomous systems.
+                </p>
+              </div>
+              <div class="detail">
+                <h4>Methodology</h4>
+                <p>
+                  A convolutional neural network architecture was implemented using transfer learning
+                  with a pretrained ResNet-50 backbone. Key steps included:
+                </p>
+                <ul class="dash-list" style="margin-top: 10px;">
+                  <li>Applying data augmentation techniques to improve generalization</li>
+                  <li>Fine-tuning classification layers on the target dataset</li>
+                  <li>Implementing a structured training pipeline with validation monitoring</li>
+                </ul>
+              </div>
+              <div class="detail">
+                <h4>Results</h4>
+                <p>
+                  The final model achieved 94.2% classification accuracy on the test dataset,
+                  representing a 12% improvement over the baseline model. Precision and recall
+                  remained balanced across classes, indicating minimal classification bias.
+                </p>
+              </div>
+              <div class="detail">
+                <h4>Key Observations</h4>
+                <ul class="dash-list">
+                  <li>Transfer learning significantly reduced training time while maintaining strong predictive
+                    performance.</li>
+                  <li>Data augmentation proved essential for preventing overfitting when training data was limited.</li>
+                  <li>Evaluation metrics beyond accuracy were necessary to properly assess model behavior.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">02</span>
+              <div class="tag-row">
+                <span class="tag tag-sm">LSTM</span>
+                <span class="tag tag-sm">Sequence Modeling</span>
+                <span class="tag tag-sm">RNN</span>
+              </div>
+            </div>
+            <h3 class="project-title">Sequence Modeling with Recurrent Neural Networks</h3>
+            <div class="project-body">
+              <div class="detail">
+                <h4>Problem</h4>
+                <p>
+                  This project explored the challenge of modeling temporal patterns in sequential data,
+                  which is critical in applications such as natural language processing and time-series prediction.
+                </p>
+              </div>
+              <div class="detail">
+                <h4>Methodology</h4>
+                <p>
+                  A recurrent neural network architecture was developed using Long Short-Term Memory (LSTM) units.
+                  The training process included:
+                </p>
+                <ul class="dash-list" style="margin-top: 10px;">
+                  <li>Use of pretrained embeddings</li>
+                  <li>Dropout regularization to reduce overfitting</li>
+                  <li>Comparison between standard and bidirectional LSTM architectures</li>
+                </ul>
+              </div>
+              <div class="detail">
+                <h4>Results</h4>
+                <p>
+                  The model achieved 89% validation accuracy, with the bidirectional architecture
+                  outperforming the standard LSTM by 6%.
+                </p>
+              </div>
+              <div class="detail">
+                <h4>Key Observations</h4>
+                <ul class="dash-list">
+                  <li>Careful data preprocessing had a significant impact on model performance.</li>
+                  <li>Hyperparameter tuning required systematic experimentation rather than heuristic selection.</li>
+                  <li>Bidirectional architectures improved contextual understanding in sequential tasks.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESEARCH ===================== -->
+    <section id="research" class="section section-alt reveal">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Research</h2>
+          <p class="section-sub">This section outlines academic research interests and exploratory projects related to
+            artificial intelligence and machine learning.</p>
+        </header>
+
+        <!-- Research overview -->
+        <div class="research-overview">
+          <div class="info-card">
+            <h3 class="card-label">Research Overview</h3>
+            <p>
+              My research interests focus on the <strong>practical performance and interpretability
+                of machine learning systems</strong>, particularly when applied to complex real-world datasets.
+              Areas of interest include:
+            </p>
+            <div class="tag-row" style="margin-top: 16px;">
+              <span class="tag">Machine Learning Optimization</span>
+              <span class="tag">Computer Vision Systems</span>
+              <span class="tag">Neural Network Architectures</span>
+              <span class="tag">Model Interpretability and Evaluation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research project cards -->
+        <div class="research-cards">
+
+          <!-- Research 01 -->
+          <article class="rcard">
+            <div class="rcard-top">
+              <span class="rcard-num">01</span>
+              <div class="tag-row">
+                <span class="tag tag-sm">CNN</span>
+                <span class="tag tag-sm">Deep Learning</span>
+                <span class="tag tag-sm">Computer Vision</span>
+              </div>
+            </div>
+            <h3 class="rcard-title">Facial Emotion Recognition Using Deep Learning</h3>
+            <p class="rcard-desc">
+              This research investigates the development of a deep learning system capable
+              of recognizing human emotional states from facial expressions.
+            </p>
+            <h4 class="rcard-sublabel">Key Elements</h4>
+            <ul class="dash-list">
+              <li>Training CNNs on facial expression datasets across multiple emotion categories</li>
+              <li>Improving classification accuracy and reducing inter-class confusion</li>
+              <li>Evaluating model performance using confusion matrices and cross-validation</li>
+              <li>Exploring transfer learning using pretrained architectures such as VGG16</li>
+            </ul>
+            <div class="rcard-goal">
+              <span class="rcard-goal-label">Objective</span>
+              <p>Develop emotion recognition systems applicable to human-computer interaction, behavioral analysis, and
+                assistive technologies.</p>
+            </div>
+          </article>
+
+          <!-- Research 02 -->
+          <article class="rcard">
+            <div class="rcard-top">
+              <span class="rcard-num">02</span>
+              <div class="tag-row">
+                <span class="tag tag-sm">Neural Networks</span>
+                <span class="tag tag-sm">Regularization</span>
+                <span class="tag tag-sm">Optimization</span>
+              </div>
+            </div>
+            <h3 class="rcard-title">Optimization of Neural Networks for Small Datasets</h3>
+            <p class="rcard-desc">
+              This research examines techniques for maintaining reliable model performance
+              when training neural networks on limited datasets.
+            </p>
+            <h4 class="rcard-sublabel">Research Directions</h4>
+            <ul class="dash-list">
+              <li>Regularization techniques to reduce overfitting on small training sets</li>
+              <li>Data augmentation strategies</li>
+              <li>Simplification of model architectures</li>
+              <li>Hyperparameter optimization methods</li>
+            </ul>
+            <div class="rcard-goal">
+              <span class="rcard-goal-label">Objective</span>
+              <p>Improve generalization performance in data-constrained machine learning environments.</p>
+            </div>
+          </article>
+
+          <!-- Research 03 -->
+          <article class="rcard">
+            <div class="rcard-top">
+              <span class="rcard-num">03</span>
+              <div class="tag-row">
+                <span class="tag tag-sm">Model Evaluation</span>
+                <span class="tag tag-sm">Interpretability</span>
+                <span class="tag tag-sm">XAI</span>
+              </div>
+            </div>
+            <h3 class="rcard-title">Machine Learning Model Evaluation and Interpretability</h3>
+            <p class="rcard-desc">
+              This research explores methods for evaluating and interpreting machine learning models,
+              ensuring transparency and reliability in algorithmic decision-making.
+            </p>
+            <h4 class="rcard-sublabel">Topics Studied</h4>
+            <ul class="dash-list">
+              <li>Model evaluation metrics such as accuracy, precision, recall, and F1-score</li>
+              <li>Confusion matrices and classification reports</li>
+              <li>Feature importance analysis</li>
+              <li>Interpretability techniques for explaining model predictions</li>
+            </ul>
+            <div class="rcard-goal">
+              <span class="rcard-goal-label">Objective</span>
+              <p>Improve the trustworthiness and transparency of machine learning systems deployed in real-world
+                applications.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Contact</h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-left">
+            <p class="contact-intro">
+              I welcome communication from professors, academic researchers, and potential
+              collaborators interested in artificial intelligence and machine learning research.
+            </p>
+            <div class="contact-list">
+              <a href="mailto:omar.ahmed@eui.edu.eg" class="contact-item">
+                <div class="contact-icon" aria-hidden="true">@</div>
+                <div>
+                  <p class="contact-label">Email</p>
+                  <p class="contact-val">omar.ahmed@eui.edu.eg</p>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/omar-ahmed" target="_blank" rel="noopener noreferrer"
+                class="contact-item">
+                <div class="contact-icon" aria-hidden="true">in</div>
+                <div>
+                  <p class="contact-label">LinkedIn</p>
+                  <p class="contact-val">linkedin.com/in/omar-ahmed</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <div class="resume-card">
+              <h3>Curriculum Vitae</h3>
+              <p>
+                A full academic CV including coursework, projects, and academic
+                achievements can be downloaded below.
+              </p>
+              <a href="#" class="btn btn-primary">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Omar Ahmed &mdash; Egypt University of Informatics &mdash; AI Department &mdash; 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
