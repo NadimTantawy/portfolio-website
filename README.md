@@ -1,6 +1,6 @@
-# Omar Ahmed — Academic Portfolio
+# Nadim Tantawy — Academic Portfolio
 
-A single-page academic portfolio for **Omar Ahmed**, a senior Artificial Intelligence student at **Egypt University of Informatics** (Class of 2026). Built for the **Technical Writing** course as Mini Project 1.
+A single-page academic portfolio for **Nadim Tantawy**, a senior Artificial Intelligence student at **Egypt University of Informatics** (Class of 2026). Built for the **Technical Writing** course as Mini Project 1.
 
 ---
 
@@ -55,4 +55,4 @@ blue-circle-with-white-user_78370-4707.avif  — Avatar image (nav + hero)
 
 ---
 
-© 2026 Omar Ahmed — Egypt University of Informatics, Technical Writing Course.
+© 2026 Nadim Tantawy — Egypt University of Informatics, Technical Writing Course.
