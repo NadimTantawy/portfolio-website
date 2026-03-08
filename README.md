@@ -1,86 +1,58 @@
-# Omar Ahmed — AI Portfolio
+# Omar Ahmed — Academic Portfolio
 
-A modern, high-performance academic portfolio designed for **Omar Ahmed**, a senior Artificial Intelligence student at **Egypt University of Informatics** (Class of 2026). This portfolio is curated to showcase academic achievements, professional experience, and technical projects in Machine Learning and Computer Vision.
-
-## 🚀 Overview
-
-This project serves as a comprehensive digital showcase of Omar's academic and professional journey. It follows a structured, research-oriented presentation style, specifically designed to meet the expectations of professors, recruiters, and academic collaborators.
-
-### Key Differentiators:
-- **Academic Focus**: Explicitly highlights core coursework and research interests.
-- **Experience-Driven**: Detailed breakdown of internships at global tech leaders like **Amazon** and **Apple**.
-- **Transparent Methodology**: Projects are presented with a focus on problem statements, methodologies, and quantitative results.
-- **Premium Aesthetics**: Implements a "glassmorphism" design system with smooth transitions and interactive elements.
+A single-page academic portfolio for **Omar Ahmed**, a senior Artificial Intelligence student at **Egypt University of Informatics** (Class of 2026). Built for the **Technical Writing** course as Mini Project 1.
 
 ---
 
-## 🛠️ Technology Stack
+## Overview
 
-The portfolio is built using a clean, "vanilla" approach to ensure maximum performance and maintainability without the overhead of heavy frameworks.
-
-- **HTML5**: Semantic markup for SEO and accessibility.
-- **CSS3 (Modern UI)**:
-  - Custom Design System using CSS Variables.
-  - **Glassmorphism**: Backdrop filters and subtle borders for a premium feel.
-  - **Dynamic Theme Engine**: Supports both **Dark Mode** (default) and **Light Mode** with local storage persistence.
-  - **Responsive Layout**: Fluid grid and flexbox systems for mobile, tablet, and desktop compatibility.
-- **JavaScript (ES6+)**:
-  - **Intersection Observer API**: For high-performance scroll-reveal animations.
-  - **Mouse-Tracking Effects**: Interactive hover effects on project cards using CSS hardware acceleration.
-  - **Sticky Navigation**: Context-aware navbar with active section highlighting.
+The portfolio presents Omar's academic profile, professional experience, technical projects, and research interests in a content-forward, evaluator-ready format. Design decisions were guided by audience analysis — the primary reader is an academic professor who needs to assess all content at a glance, without hidden interactions.
 
 ---
 
-## 📂 Project Structure
+## Technology Stack
 
-- `index.html`: The main structural entry point, including SEO meta tags and semantic sections.
-- `styles.css`: A comprehensive design system containing over 900 lines of curated styles, layout utilities, and theme-specific logic.
-- `script.js`: Lightweight logic for interactivity, theme management, and animation triggers.
-- `Mini proj 1 doc.txt`: The original project planning and requirements document, detailing target audience analysis and information architecture.
+Vanilla HTML5, CSS3, and JavaScript — no frameworks, no build tools.
 
----
-
-## 📖 Key Sections
-
-### 1. Hero & Introduction
-A high-impact landing section that establishes Omar's academic standing and specialization in ML and Computer Vision.
-
-### 2. Academic Background
-Focuses on the core curriculum, including Machine Learning, Computer Vision, Deep Learning, and Data Analysis.
-
-### 3. Experience
-Documented internships at:
-- **Amazon** (Machine Learning Intern)
-- **Apple** (Software Engineering Intern)
-- **HR Health One** (Full-Stack Developer Intern)
-
-### 4. Technical Projects
-In-depth case studies including:
-- **Image Classification (CNN)**: achieved 94.2% accuracy using Transfer Learning.
-- **Sequence Modeling (LSTM)**: Bidirectional RNN architecture for temporal data.
-
-### 5. Research Interests
-Current exploration into **Facial Emotion Recognition**, **Small Dataset Optimization**, and **Explainable AI (XAI)**.
+- **HTML5**: Semantic markup with ARIA labels and a skip-nav link for accessibility.
+- **CSS3**: Custom properties for dark/light theming, glassmorphism cards, responsive flexbox/grid layout.
+- **JavaScript (ES6+)**: IntersectionObserver scroll-reveal, sticky nav with active-link tracking, mobile hamburger menu, mouse-tracking gradient on project cards.
 
 ---
 
-## 🎨 Design Philosophy
+## File Structure
 
-The portfolio adheres to high-end design standards:
-- **Typography**: Uses the *Outfit* and *Inter* font families for a modern, technical aesthetic.
-- **Contrast**: High-contrast ratios to ensure readability for academic evaluation.
-- **Accessibility**: Includes ARIA labels, semantic headers, and logical site flow for screen readers.
-- **Micro-animations**: Subtle transitions that provide feedback without distracting the user.
-
----
-
-## 📋 Planning & Documentation
-
-The development of this portfolio was guided by a rigorous planning phase (documented in `Mini proj 1 doc.txt`), which defined the:
-- **Primary Visitor**: Academic professors and researchers.
-- **10-Second Goal**: To immediately communicate academic focus and evidence of technical thinking.
-- **UX Strategy**: Minimalist, card-based layout with a "one-page scroll" flow for seamless navigation.
+```
+index.html   — Single-page markup; all six sections on one scroll
+styles.css   — Design system: tokens, layout, components, responsive breakpoints
+script.js    — Theme toggle, scroll behavior, mobile menu, reveal animations
+blue-circle-with-white-user_78370-4707.avif  — Avatar image (nav + hero)
+```
 
 ---
 
-© 2026 Omar Ahmed — Built for the Technical Writing Course.
+## Sections
+
+| # | Section | Content |
+|---|---------|---------|
+| 1 | **Home** | Hero with name, tagline, two intro paragraphs, and CTA buttons |
+| 2 | **About** | Institution info, focus areas, four core-coursework cards |
+| 3 | **Experience** | Three internship cards (Apple 2025 → HR Health One 2024 → Amazon 2023), newest first |
+| 4 | **Projects** | Two ML project cards — Problem and Results always visible; Methodology and Key Observations in a native `<details>` element |
+| 5 | **Research** | Three research cards covering Facial Emotion Recognition, Small Dataset Optimization, and Explainable AI |
+| 6 | **Contact** | Email, LinkedIn, and CV download |
+
+---
+
+## Design Notes
+
+- **Theme**: Dark by default (`--bg: #120e15`, teal accent `#14b8a6`), toggleable to light; preference persisted in `localStorage`.
+- **Typography**: *Outfit* for headings, *Inter* for body; minimum 16px body text.
+- **Cards**: Glassmorphism — `backdrop-filter` blur, semi-transparent `rgba` backgrounds, hover lift with accent border glow.
+- **Progressive disclosure**: `<details>/<summary>` used only for secondary project content (Methodology, Key Observations) — all primary content (Problem, Results, research details, experience bullets) is always visible.
+- **Bullet format**: Noun-first phrase style with em-dash technology qualifiers for scannable, evaluation-ready lists.
+- **Responsive**: Two-column layouts collapse to one column at 768px; pill navbar collapses to hamburger menu.
+
+---
+
+© 2026 Omar Ahmed — Egypt University of Informatics, Technical Writing Course.
