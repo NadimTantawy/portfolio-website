@@ -4,54 +4,71 @@ A single-page academic portfolio for **Nadim Tantawy**, a senior Artificial Inte
 
 ---
 
-## Overview
+## Purpose
 
-The portfolio presents Omar's academic profile, professional experience, technical projects, and research interests in a content-forward, evaluator-ready format. Design decisions were guided by audience analysis — the primary reader is an academic professor who needs to assess all content at a glance, without hidden interactions.
+This portfolio supports academic evaluation by showing proof of work done in AI courses — not a general showcase, but a targeted document for a professor audience. The 10-second goal: communicate name, academic focus, evidence of structured thinking, and correct technical terminology. Every content and design decision follows from that constraint.
+
+---
+
+## Audience & Design Rationale
+
+**Primary reader**: an academic professor scanning for evidence of technical competence and research-oriented thinking.
+
+**What they need immediately**: name, specialization, and proof that projects are explained — not just listed. Vague descriptions, missing methodology, or design that outweighs content would signal the opposite.
+
+This drove three concrete decisions:
+- All primary content (problem statements, results, experience bullets, research objectives) is always visible — no hover-to-reveal, no hiding behind interactions.
+- Project cards use `<details>/<summary>` only for secondary material (Methodology, Key Observations), keeping the evaluator-critical content up front.
+- Bullet points follow a noun-first phrase format with em-dash technology qualifiers — scannable and information-dense without padding.
+
+---
+
+## Site Structure
+
+Six sections on a single scroll, reachable in ≤ 2 clicks from anywhere via the sticky navbar:
+
+| # | Section | Content |
+|---|---------|---------|
+| 1 | **Home** | Name, tagline, two-paragraph intro establishing academic focus, CTA buttons |
+| 2 | **About** | Institution, degree, focus areas, four core-coursework cards |
+| 3 | **Experience** | Three internship cards (Apple 2025 → HR Health One 2024 → Amazon 2023), newest first |
+| 4 | **Projects** | Two ML case studies — Problem and Results always visible; Methodology and Key Observations expandable via `<details>` |
+| 5 | **Research** | Three research cards: Facial Emotion Recognition, Small Dataset Optimization, Explainable AI |
+| 6 | **Contact** | Email, LinkedIn, CV download |
+
+Navigation returns to Home via the brand link; all six sections are one click away. Layout is uncluttered by design — content sections, not decorative fillers.
 
 ---
 
 ## Technology Stack
 
-Vanilla HTML5, CSS3, and JavaScript — no frameworks, no build tools.
+Vanilla HTML5, CSS3, and JavaScript — no frameworks, no build tools — chosen for fast loading and full control over markup semantics.
 
-- **HTML5**: Semantic markup with ARIA labels and a skip-nav link for accessibility.
-- **CSS3**: Custom properties for dark/light theming, glassmorphism cards, responsive flexbox/grid layout.
-- **JavaScript (ES6+)**: IntersectionObserver scroll-reveal, sticky nav with active-link tracking, mobile hamburger menu, mouse-tracking gradient on project cards.
-
----
-
-## File Structure
-
-```
-index.html   — Single-page markup; all six sections on one scroll
-styles.css   — Design system: tokens, layout, components, responsive breakpoints
-script.js    — Theme toggle, scroll behavior, mobile menu, reveal animations
-blue-circle-with-white-user_78370-4707.avif  — Avatar image (nav + hero)
-```
+- **HTML5**: Semantic elements (`<header>`, `<main>`, `<article>`, `<section>`) with ARIA labels throughout; native `<details>/<summary>` for accessible progressive disclosure.
+- **CSS3**: Custom property design system for dark/light theming, glassmorphism cards (`backdrop-filter`), responsive flexbox/grid that collapses to single-column at 768px.
+- **JavaScript (ES6+)**: `IntersectionObserver` for scroll-reveal, sticky nav with active-link tracking, mobile hamburger menu, mouse-tracking radial gradient on project cards.
 
 ---
 
-## Sections
+## Performance & Responsiveness
 
-| # | Section | Content |
-|---|---------|---------|
-| 1 | **Home** | Hero with name, tagline, two intro paragraphs, and CTA buttons |
-| 2 | **About** | Institution info, focus areas, four core-coursework cards |
-| 3 | **Experience** | Three internship cards (Apple 2025 → HR Health One 2024 → Amazon 2023), newest first |
-| 4 | **Projects** | Two ML project cards — Problem and Results always visible; Methodology and Key Observations in a native `<details>` element |
-| 5 | **Research** | Three research cards covering Facial Emotion Recognition, Small Dataset Optimization, and Explainable AI |
-| 6 | **Contact** | Email, LinkedIn, and CV download |
+- Lightweight HTML/CSS structure with no external dependencies beyond two Google Fonts — fast initial load.
+- Responsive containers and flexible grid layouts handle mobile, tablet, and desktop without media-query bloat.
+- Pill navbar collapses to a hamburger menu at 768px; two-column grids collapse to one column at the same breakpoint.
 
 ---
 
-## Design Notes
+## Accessibility
 
-- **Theme**: Dark by default (`--bg: #120e15`, teal accent `#14b8a6`), toggleable to light; preference persisted in `localStorage`.
-- **Typography**: *Outfit* for headings, *Inter* for body; minimum 16px body text.
-- **Cards**: Glassmorphism — `backdrop-filter` blur, semi-transparent `rgba` backgrounds, hover lift with accent border glow.
-- **Progressive disclosure**: `<details>/<summary>` used only for secondary project content (Methodology, Key Observations) — all primary content (Problem, Results, research details, experience bullets) is always visible.
-- **Bullet format**: Noun-first phrase style with em-dash technology qualifiers for scannable, evaluation-ready lists.
-- **Responsive**: Two-column layouts collapse to one column at 768px; pill navbar collapses to hamburger menu.
+- Semantic HTML and clear section headings allow screen readers to navigate the site structure without visual cues.
+- Alt text on all images; ARIA labels on interactive controls.
+- High-contrast color palette (teal `#14b8a6` on dark `#120e15`); minimum 16px body text; two fonts maximum (*Outfit* headings, *Inter* body).
+
+---
+
+## Differentiation
+
+The portfolio is scoped to academic ML work and research — not a general programming showcase. Content emphasizes theoretical understanding, structured evaluation methodology, and reproducible experimentation, which is what distinguishes an AI academic portfolio from a generic developer page.
 
 ---
 

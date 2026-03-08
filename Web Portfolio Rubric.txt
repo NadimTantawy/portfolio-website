@@ -1,0 +1,118 @@
+Web Portfolio Rubric
+Web Portfolio Rubric
+Criteria	Ratings	Pts
+Branding & Homepage Effectiveness
+view longer description
+1-Is the logo original and placed appropriately on the website?
+2-Does the slogan clearly reflect the purpose of the site?
+3-Is the homepage professional and clear?
+4-Does the website load quickly and fit properly on the screen?
+2 pts
+Excellent
+Strong identity. Logo & slogan clearly reflect purpose. Professional homepage.
+1.5 pts
+Good
+Mostly clear branding with minor weaknesses.
+1 pts
+Developing
+Branding present but unclear or weak.
+0.5 pts
+Weak
+Brand identity unclear or poorly implemented.
+/ 2 pts
+Navigation
+view longer description
+1-Do all the links work properly?
+2-Does the wording of each link match its page title?
+3-Is the website structure logical and well organized?
+4-Can the reader navigate the website without getting lost?
+2 pts
+Excellent
+Navigation intuitive. All links are functional and clearly labeled.
+1.5 pts
+Good
+Minor navigation issues.
+1 pts
+Developing
+Some broken links or unclear structure.
+0.5 pts
+Weak
+Navigation is confusing or dysfunctional.
+/ 2 pts
+Organization
+view longer description
+1-Is the organization of the website clearly visible in the design?
+2-Does each section include a clear introduction?
+3-Is a “Last Updated” date displayed on the website?
+4-Are the references complete (including title, URL, and date updated)?
+2 pts
+Excellent
+Well-organized. Clear sections. References complete.
+1.5 pts
+Good
+Mostly organized; minor missing elements.
+1 pts
+Developing
+Some unclear organization or missing elements.
+0.5 pts
+Weak
+Disorganized or incomplete.
+/ 2 pts
+Text & Screen Design
+view longer description
+1-Do all images load properly?
+2-Do the visuals add meaning beyond the written text?
+3-Are captions included for the visuals?
+4-Are the visuals placed consistently across the website?
+2 pts
+Excellent
+Professional, clean, consistent layout.
+1.5 pts
+Good
+Mostly consistent with small issues.
+1 pts
+Developing
+Noticeable inconsistencies.
+0.5 pts
+Weak
+Poor readability or inconsistent design.
+/ 2 pts
+Visual Aid Integration
+view longer description
+1-Do all images load properly?
+2-Do the visuals add meaning beyond the written text?
+3-Are captions included for the visuals?
+4-Are the visuals placed consistently across the website?
+1 pts
+Excellent
+Visuals enhance understanding and are well integrated.
+0.75 pts
+Good
+Visuals are appropriate but have limited impact.
+0.5 pts
+Developing
+Visuals present but weakly integrated.
+0.25 pts
+Weak
+Visuals missing or decorative only.
+/ 1 pts
+Language & Professionalism
+1-Is the grammar correct throughout the website?
+2-Is the spelling correct throughout the website?
+3-Is the word choice appropriate for the target audience?
+4-Is the tone consistent across all sections?
+view longer description
+1 pts
+Excellent
+Clear academic/professional English
+0.75 pts
+Good
+Minor language issues
+0.5 pts
+Developing
+Frequent but understandable errors.
+0.25 pts
+Weak
+Errors affect clarity.
+/ 1 pts
+Total Points: 0
