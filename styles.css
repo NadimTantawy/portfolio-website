@@ -1060,10 +1060,14 @@ html[data-theme="light"] .icon-sun {
 }
 
 .references-list li a {
-  color: var(--accent);
+  color: #60a5fa;
   text-decoration: underline;
   text-underline-offset: 3px;
   word-break: break-all;
+}
+
+html[data-theme="light"] .references-list li a {
+  color: #2563eb;
 }
 
 /* ── Details / Summary (project cards) ───────────────────── */
