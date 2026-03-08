@@ -6,7 +6,7 @@ A single-page academic portfolio for **Nadim Tantawy**, a senior Artificial Inte
 
 ## Overview
 
-The portfolio presents Omar's academic profile, professional experience, technical projects, and research interests in a content-forward, evaluator-ready format. Design decisions were guided by audience analysis — the primary reader is an academic professor who needs to assess all content at a glance, without hidden interactions.
+The portfolio presents Omar's academic profile, professional experience, technical projects, and research interests in a content-forward, evaluator-ready format. Design decisions were guided by audience analysis — the primary reader is an academic professor who needs to assess all content at a glance, without unnecessary stuffing.
 
 ---
 
