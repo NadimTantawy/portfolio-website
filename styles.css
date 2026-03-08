@@ -986,6 +986,53 @@ html[data-theme="light"] .icon-sun {
   margin-bottom: 22px;
 }
 
+/* ── Details / Summary (project cards) ───────────────────── */
+.project-card details {
+  margin-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.project-card details summary {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 0 0;
+  transition: opacity var(--t);
+  user-select: none;
+}
+
+.project-card details summary::-webkit-details-marker {
+  display: none;
+}
+
+.project-card details summary::before {
+  content: '+';
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--accent);
+  transition: transform var(--t);
+}
+
+.project-card details[open] summary::before {
+  content: '\2212';
+}
+
+.project-card details summary:hover {
+  opacity: 0.75;
+}
+
+.project-card details .detail {
+  padding-top: 20px;
+}
+
 /* ── Footer ───────────────────────────────────────────────── */
 .footer {
   padding: 60px 0;
